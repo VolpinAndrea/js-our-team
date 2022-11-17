@@ -73,7 +73,7 @@ function stampaMembro(persona){
 
 function stampaSuHTML(persona){
     containerMileston2.innerHTML += ' <div>';
-    containerMileston2.innerHTML += ' <p>'+persona.foto+'</p>';
+    containerMileston2.innerHTML += ' <img src="img/'+persona.foto+'">';
     containerMileston2.innerHTML += ' <p>'+persona.nome+'</p>';
     containerMileston2.innerHTML += ' <p>'+persona.ruolo+'</p>';
     containerMileston2.innerHTML += '</div>';
