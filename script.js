@@ -1,10 +1,6 @@
 /*
-nome repo: js-our-team
 Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
 Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
-
-MILESTONE 2:
-Stampare le stesse informazioni su DOM sottoforma di stringhe
 BONUS 1:
 Trasformare la stringa foto in una immagine effettiva
 BONUS 2:
@@ -52,6 +48,12 @@ for(const membro of membri){
     stampaMembro(membro);
 }
 
+/*MILESTONE 2:
+Stampare le stesse informazioni su DOM sottoforma di stringhe*/
+let containerMileston2 = document.getElementById("mileston2");
+for(const membro of membri){
+    stampaSuHTML(membro);
+}
 
 
 
@@ -67,4 +69,13 @@ function stampaMembro(persona){
 
         `
     )
+}
+
+function stampaSuHTML(persona){
+    containerMileston2.innerHTML += ' <div>';
+    containerMileston2.innerHTML += ' <p>'+persona.foto+'</p>';
+    containerMileston2.innerHTML += ' <p>'+persona.nome+'</p>';
+    containerMileston2.innerHTML += ' <p>'+persona.ruolo+'</p>';
+    containerMileston2.innerHTML += '</div>';
+
 }
