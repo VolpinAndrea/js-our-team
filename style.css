@@ -1,0 +1,15 @@
+*{
+    font-family:"Fredoka";
+    text-align: center;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+.containerFlex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.carta{
+    border: 7px;
+}

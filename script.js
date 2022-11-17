@@ -50,11 +50,16 @@ for(const membro of membri){
 
 /*MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe*/
-let containerMileston2 = document.getElementById("mileston2");
+
+/*let containerMileston2 = document.getElementById("mileston2");
 for(const membro of membri){
     stampaSuHTML(membro);
-}
+}*/
+let containerFlex = document.getElementById("flexcontainer");
+for(const membro of membri){
+    stampaCardBootsrap(membro);
 
+}
 
 
 //------------------FUNZIONI---------------------
@@ -79,3 +84,16 @@ function stampaSuHTML(persona){
     containerMileston2.innerHTML += '</div>';
 
 }
+
+// Ho messo tutto su una linea perchè non ho trovato un modo piu bello per scriverlo ma spero ci sia 
+function stampaCardBootsrap(persona){
+    containerFlex.innerHTML += '<div id="flexcontainer" class="containerFlex"><div class="carta"><img src="img/'+persona.foto+'" class=""><div class="card-body"><h4>'+persona.nome+'</h4><p>'+persona.ruolo+'</p></div></div></div>';
+    // containerFlex.innerHTML += '<div class="flexcontainer"><div class="card">';
+    // containerFlex.innerHTML += ' <img src="img/'+persona.foto+'" class="card-img-top">>';
+    // containerFlex.innerHTML += ' <div class="card-body"';
+    // containerFlex.innerHTML += ' <p>'+persona.nome+'</p>';
+    // containerFlex.innerHTML += ' <p>'+persona.ruolo+'</p>';
+    // containerFlex.innerHTML += '</div></div></div>';
+
+}
+
